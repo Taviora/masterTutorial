@@ -26,3 +26,5 @@ var numero_falso = "33";
 //parseInt -> parsea un float a int
 console.log(verdadero_o_falso);
 
+//el typeof() me indica que tipo de datos es la variable
+console.log(typeof(cadena_texto));
