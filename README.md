@@ -1,2 +1,2 @@
-# masterTutorial
-Node.js, angular, css, javasscript tutorial
+# Curso de JS desde principiante
+Node.js,css, javascript tutorial
