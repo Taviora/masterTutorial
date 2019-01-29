@@ -32,6 +32,7 @@ var boton = document.querySelector("#boton");
 
 boton.addEventListener('click', function(){
     cambiarColor();
+    this.style.border ="10px solid black"
 });
 
 //mouse over
