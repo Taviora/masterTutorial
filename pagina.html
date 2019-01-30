@@ -9,9 +9,31 @@
 </head>
 <body>
     <h1>JSON</h1>
+    <h1>Añade tu pelicula</h1>
+    <form action="" id="formpeliculas">
+        <label for="addmovie">Nombre:</label>
+        <input type="text" name="addmovie" id="addmovie">
+        <button type="submit">Guardar</button>
+    </form>
+ 
+    <h2>Peliculas</h2>
     <div id="peliculas">
-        <h2>Peliculas</h2>
+        <ul id="peliculas-list">
+
+        </ul>
+        
     </div>
+
+    <h1>Elimina tu pelicula</h1>
+    <form action="" id="formdeletepeliculas">
+        <label for="deletemovie">Nombre:</label>
+        <input type="text" name="deletemovie" id="deletemovie">
+        <button type="submit">Eliminar</button>
+    </form>
 </body>
-<script type="text/Javascript" src="js/json.js"></script>
+<!--
+    <script type="text/Javascript" src="js/json.js"></script>
+    <script type="text/Javascript" src="js/localstorage.js"></script>
+-->
+<script type="text/Javascript" src="js/ejercicioLocalstorage.js"></script>
 </html>
