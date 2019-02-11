@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proyecto con JS</title>
+
+    <!---- Estilos CSS ---->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+ 
+    
+    <!----JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <!---JQuery UI-->
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
+    
+     <!---Moment JS-->
+     <script type="text/JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+     <script type="text/JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+   
+    <!---Mis scripts--->
+    <script type="text/JavaScript" src="js/main.js"></script>
+
+</head>
+<body>
+
+    <div id="selector-theme">
+
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+
+    </div>
+    <section id="global">
+
+        <!---- Cabecera ---->
+        <header id="header">
+            <div id="logo">
+               <h1>Proyecto JS</h1>
+            </div>
+            <div class="clearfix">
+
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="reloj.html">Reloj</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="about.html">Sobre mi</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        
+        <!---- Contenido ---->
+        <section id="content">
+            <div id="box">
+               <!--Mostrar reloj--> 
+               <div id="reloj">
+
+
+               </div>            
+
+            </div>
+            <aside id="sidebar">
+                <div id="about">
+                    <h4><span>¿Quien soy?</span></h4>
+                    <img src="img/caracol.jpg" alt="">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nunc tincidunt felis turpis, non finibus dolor volutpat a. 
+                        Integer tincidunt ipsum at bibendum placerat. In ac felis sit
+                    </p>
+                </div>
+                <div id="login">
+                    <h4><span>Identificate</span></h4>
+                    <form action="">
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name" id=form-name>
+
+                        <label for="email">Correo:</label>
+                        <input type="email" name="email" id=form-email>
+
+                        <label for="pass">Contraseña:</label>
+                        <input type="password" name="pass" id=form-pass>
+
+                        <input type="submit" value="Entrar">
+
+                    </form>
+                </div>
+
+            </aside>
+
+            <div class="clearfix">
+
+            </div>
+
+        </section>
+    </section>
+    <footer>
+            Master de JavaScript &copy;
+    
+            <a href="#" class="subir">Ir arriba</a>
+    </footer>
+</body>
+</html>
