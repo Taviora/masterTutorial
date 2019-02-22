@@ -1,11 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-
-
-// Declaramos las variables para jQuery 
-//asi de esta forma podemos utilizarlo sin problema
-declare var jQuery:any;
-declare var $:any;
-
+import { Component, OnInit ,ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -14,21 +7,30 @@ declare var $:any;
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  public widthSlider: number;
+  public anchuraToSlider: any;
+  public captions:boolean;
+  public autor:any;
+  @ViewChild('textos') textos;
 
-  ngOnInit() {
-    
-    $("#logo").click(function(e){
-      $("header").css("background","green");
-      
-    });
-
-    $('.galeria').bxSlider({
-      mode: 'fade',
-      captions: false,
-      slideWidth: 400
-    });
-
+  constructor() { 
+    this.captions = false;
   }
 
+  ngOnInit() {
+    //console.log(this.textos.nativeElement.textContent);
+  }
+
+  cargarSlider(){
+   
+    this.anchuraToSlider = this.widthSlider;
+  }
+
+  resetearSlider(){
+    this.anchuraToSlider = false;
+  }
+  
+  getAutor(event){
+   this.autor = event;
+  }
 }
